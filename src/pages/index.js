@@ -12,10 +12,10 @@ export default function Home() {
       <div>
         <Nav />
         <div className="main-section  bg-home-bg w-screen h-[100vh]  text-white ">
-          <div className="absolute top-32 flex   justify-between w-screen h-1/2  ">
-            <div className="w-1/2 ml-20 pl-10 h-[70%] flex flex-col justify-start">
-              <h1 className="text-5xl">E-artifact</h1>
-              <h3>pragati strides</h3>
+          <div className="absolute top-32  w-screen h-1/2 flex justify-start">
+            <div className="w-1/2 ml h-[70%] flex flex-col justify-start ml-10 gap-10">
+              <h1 className="text-2xl sm:text-5xl">E-artifact</h1>
+              <h3 className="text-[#b968c7] text-2xl">pragati strides</h3>
             </div>
             <div className="invisible sm:visible">
               <svg

@@ -27,7 +27,9 @@ const Nav = () => {
         hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-purple-500/50 focus:decoration-purple-500/50
         "
           >
-            <a>Register</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBfdmESh0BrMTqPeG42sH16n7n8UoR6ruFTABKetuzvj3FIQ/viewform?usp=sf_link">
+              Register
+            </a>
           </div>
           <div
             className="
