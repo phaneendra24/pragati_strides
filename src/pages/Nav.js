@@ -4,7 +4,7 @@ import Events from "./routing/Events";
 const Nav = () => {
   return (
     <>
-      <nav className="bg-transparent  fixed w-full text-white  px-10 flex justify-between items-center py-5">
+      <nav className=" fixed w-full text-white  px-10 flex justify-between items-center py-5">
         <div className="text-4xl text-[#b968c7] font-semibold ">Pragati</div>
 
         <div className="flex justify-end  gap-4 sm:gap-32">

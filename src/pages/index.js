@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <div className="">
+      <div className="h-[screen] w-screen">
         <Nav />
         <div className="main-section  bg-home-bg w-screen h-[100vh]  text-white ">
           <div className="absolute top-32  w-screen h-1/2 flex justify-start">
