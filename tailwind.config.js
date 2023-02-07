@@ -13,6 +13,7 @@ module.exports = {
       backgroundImage: {
         "main-svg": "url('/vercel.svg')",
         "home-bg": "url('/home-bg.jpg')",
+        poster: "url('/poster.jpg')",
       },
     },
   },

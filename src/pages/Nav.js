@@ -1,9 +1,14 @@
+import Link from "next/link";
+import Events from "./routing/Events";
+
 const Nav = () => {
   return (
     <>
-      <nav className="bg-transparent  fixed w-full text-white  px-10 flex justify-between items-center py-5 ">
-        <div className="text-4xl">Strides</div>
-        <div className="flex justify-end  gap-7 sm:gap-32">
+      <nav className="bg-transparent  fixed w-full text-white  px-10 flex justify-between items-center py-5">
+        <div className="text-4xl text-[#b968c7] font-semibold">
+          Pragati Engineering college{" "}
+        </div>
+        <div className="flex justify-end  gap-4 sm:gap-32">
           <div
             className="
           hover:underline
@@ -34,7 +39,7 @@ const Nav = () => {
         
         "
           >
-            <a>Events</a>
+            <Link href="/routing/Events">Events</Link>
           </div>
         </div>
       </nav>
