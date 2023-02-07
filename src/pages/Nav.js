@@ -1,50 +1,86 @@
-import Link from "next/link";
-import Events from "./routing/Events";
+import { useState } from "react";
 
 const Nav = () => {
+  let Links = [
+    {
+      name: "Home",
+      link: "",
+    },
+    {
+      name: "Register",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdBfdmESh0BrMTqPeG42sH16n7n8UoR6ruFTABKetuzvj3FIQ/viewform?usp=sf_link",
+    },
+    {
+      name: "Events",
+      link: "/routing/Events",
+    },
+  ];
+  let [menu, setmenu] = useState(false);
   return (
-    <>
-      <nav className=" fixed w-full text-white  px-10 flex justify-between items-center py-5">
-        <div className="text-4xl text-[#b968c7] font-semibold ">Pragati</div>
-
-        <div className="flex justify-end  gap-4 sm:gap-32">
-          <div
-            className="
-          hover:underline
-          decoration-purple-500 decoration-[0.25rem]
-          motion-safe:transition-all motion-safe:duration-200
-          hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-purple-500/50 focus:decoration-purple-500/50
-          
-        "
-          >
-            <a>Home</a>
-          </div>
-          <div
-            className="
-        hover:underline
-        decoration-purple-500 decoration-[0.25rem]
-        motion-safe:transition-all motion-safe:duration-200
-        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-purple-500/50 focus:decoration-purple-500/50
-        "
-          >
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBfdmESh0BrMTqPeG42sH16n7n8UoR6ruFTABKetuzvj3FIQ/viewform?usp=sf_link">
-              Register
-            </a>
-          </div>
-          <div
-            className="
-        hover:underline
-        decoration-purple-500 decoration-[0.25rem]
-        motion-safe:transition-all motion-safe:duration-200
-        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-purple-500/50 focus:decoration-purple-500/50
-        
-        "
-          >
-            <Link href="/routing/Events">Events</Link>
-          </div>
+    <div className="w-full fixed top-0 left-0 text-white">
+      <div className="md:flex items-center justify-between bg-[#14142b]  py-4 md:px-10 px-7">
+        {/* <div className="font-bold text-2xl cursor-pointer flex items-center"> */}
+        <div>Pragati</div>
+        <div
+          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          onClick={() => setmenu(!menu)}
+        >
+          {menu ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          )}
         </div>
-      </nav>
-    </>
+        <ul
+          className={`bg-[#14142b] md:flex md:items-center md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+            menu ? "top-20" : "top-[-490px]"
+          }`}
+        >
+          {Links.map((Link) => (
+            <li
+              key={Link.name}
+              className="md:ml-8 text-xl
+            hover:underline
+            hover:text-violet-700 duration-500
+        motion-safe:transition-all motion-safe:duration-200
+        hover:text-xl font-semibold
+        md:my-0 my-7
+
+            "
+            >
+              <a href={Link.link}>{Link.name}</a>
+            </li>
+          ))}
+        </ul>
+        {/* </div> */}
+      </div>
+    </div>
   );
 };
 

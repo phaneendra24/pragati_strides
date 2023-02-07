@@ -1,7 +1,4 @@
-import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
 import Nav from "./Nav";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -9,21 +6,30 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <div className="h-[screen] w-screen">
+      <div className=" w-screen ">
         <Nav />
-        <div className="main-section  bg-home-bg w-screen h-[100vh]  text-white ">
-          <div className="absolute top-32  w-screen h-1/2 flex justify-start">
-            <div className="w-2/3 ml h-[70%] flex flex-col justify-start ml-10 gap-10">
-              <h1 className="text-2xl sm:text-5xl">pragati strides</h1>
+        <div className="main-section h-[100vh] bg-home-bg w-screen  text-white ">
+          <div className="mt-32 w-screen flex justify-between">
+            <div className="h-[70%] flex flex-col justify-start ml-10 gap-10">
+              <h1 className="text-2xl sm:text-5xl">Pragati Strides</h1>
               <h3 className="text-[#b968c7] sm:text-2xl text-6xl">
                 E-artifact
               </h3>
-              <div className=" w-2/3 sm:4/6 text-4xl">
+              <div className="pr-10 sm:4/6 text-xl">
                 Modern technology is not good or evil in itself.<br></br> It's
-                all about how people choose to use it
+                all about how people choose to use it.
               </div>
+              <button
+                type="button"
+                className="w-48 mt-10 text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBfdmESh0BrMTqPeG42sH16n7n8UoR6ruFTABKetuzvj3FIQ/viewform?usp=sf_link">
+                  Register Now
+                </a>
+              </button>
             </div>
-            <div className="invisible sm:visible">
+
+            <div className=" sm:pr-16 invisible sm:visible">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1000 1000"
@@ -42,8 +48,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className="h-10 w-10"></div>
       </div>
     </>
   );
