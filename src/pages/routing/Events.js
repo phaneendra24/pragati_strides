@@ -5,7 +5,7 @@ const Events = () => {
         <img
           src="/poster.jpg"
           className=" h-[80%] sm:h-full w-[100%] sm:w-[90%] "
-        ></img>
+        />
         <div className="mt-14 flex  text-white">
           <div className="px-14 w-screen h-96 flex justify-between">
             <div className="w-1/2">
@@ -20,7 +20,7 @@ const Events = () => {
               </p>
             </div>
             <div className="w-1/2 h-72 flex flex-col  justify-start gap-10 items-center">
-              <img src="/technook.jpg" className="w-64"></img>
+              <img src="/technook.jpg" className="w-64" />
               <div className="w-36 bg-blue-800 text-center">register</div>
             </div>
           </div>
