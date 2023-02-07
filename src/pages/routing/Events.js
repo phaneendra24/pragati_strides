@@ -18,12 +18,17 @@ const Events = () => {
                 </a>
               </h1>
               <div className="h-52">
-                Only individual participation is allowed to participate in the
-                event.Participants must have "Unstop" account (details will be
-                provided in prior). Participant should participate in the given
-                allotted time. Guidelines: Participants will be shortlisted in
-                each round depending on score secured.In case of time breaker,
-                we will consider best time.
+                Rules:<br></br>
+                1.Only individual participation is allowed to participate in the
+                event.<br></br>
+                2.Participants must have "Unstop" account (details will be
+                provided in prior).<br></br>
+                Participant should participate in the given allotted time.
+                <br></br>
+                Guidelines:<br></br>
+                1.Participants will be shortlisted in each round depending on
+                score secured. 2.In case of time breaker, we will
+                consider best time.
               </div>
             </div>
             <div className="w-1/2 h-72 flex flex-col  justify-start gap-10 items-center">
@@ -51,12 +56,12 @@ const Events = () => {
                 </a>
               </h1>
               <div className="h-52">
-                Round-1:  The participation should be individual.  The
-                participant must have to fill the answer that match with the
-                word in the puzzle.
-                <br></br> Round-2:  The students filtered in Round 1 only will
-                be allowed to Round-2.  The participant will be given a code
-                and they have to rewrite the code in the optimized way
+                Round-1:<br></br> The participation should be individual.
+                <br></br>  The participant must have to fill the answer that
+                match with the word in the puzzle.<br></br> Round-2:<br></br>
+                The students filtered in Round 1 only will be allowed to
+                Round-2. <br></br> The participant will be given a code and
+                they have to rewrite the code in the optimized way
                 (better efficiency).
               </div>
             </div>

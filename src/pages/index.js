@@ -9,13 +9,19 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <div>
+      <div className="">
         <Nav />
         <div className="main-section  bg-home-bg w-screen h-[100vh]  text-white ">
           <div className="absolute top-32  w-screen h-1/2 flex justify-start">
-            <div className="w-1/2 ml h-[70%] flex flex-col justify-start ml-10 gap-10">
-              <h1 className="text-2xl sm:text-5xl">E-artifact</h1>
-              <h3 className="text-[#b968c7] text-2xl">pragati strides</h3>
+            <div className="w-2/3 ml h-[70%] flex flex-col justify-start ml-10 gap-10">
+              <h1 className="text-2xl sm:text-5xl">pragati strides</h1>
+              <h3 className="text-[#b968c7] sm:text-2xl text-6xl">
+                E-artifact
+              </h3>
+              <div className=" w-2/3 sm:4/6 text-4xl">
+                Modern technology is not good or evil in itself.<br></br> It's
+                all about how people choose to use it
+              </div>
             </div>
             <div className="invisible sm:visible">
               <svg
