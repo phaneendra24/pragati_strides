@@ -17,12 +17,11 @@ export default function Home() {
               <h1 className="text-5xl">E-artifact</h1>
               <h3>pragati strides</h3>
             </div>
-            <div>
+            <div className="invisible sm:visible">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1000 1000"
-                width="500"
-                height="500"
+                className="sm:w-96 sm:h-96"
               >
                 <defs>
                   <image

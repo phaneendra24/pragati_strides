@@ -13,7 +13,11 @@ module.exports = {
       backgroundImage: {
         "main-svg": "url('/vercel.svg')",
         "home-bg": "url('/home-bg.jpg')",
-        poster: "url('/poster.jpg')",
+        "poster-bg": "url('/poster.jpg')",
+        "adventureQuest-bg": "url('/AdventureQuest.jpg')",
+        // "techconnect": "url('/eventsPhotos/technook.jpg')",
+        // "trickyzone": "url('/eventsPhotos/trcikyZone.jpg')",
+        // "heuristicFlick": "url('/eventsPhotos/trcikyZone.jpg')",
       },
     },
   },
