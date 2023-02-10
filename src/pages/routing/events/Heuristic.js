@@ -62,7 +62,10 @@ const Heuristic = () => {
           >
             {eventRules.map((rule) => {
               return (
-                <li className="p-2 h-32 flex  justify-center items-center border-2 border-purple-700">
+                <li
+                  key={rule}
+                  className="p-2 h-32 flex  justify-center items-center border-2 border-purple-700"
+                >
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
