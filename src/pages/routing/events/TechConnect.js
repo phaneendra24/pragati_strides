@@ -26,6 +26,7 @@ const TechConnect = () => {
               width={400}
               height={100}
               className="w-full h-56"
+              alt="Loading..."
             />
           </div>
           <div className=" h-full w-full flex flex-col justify-evenly p-5">
