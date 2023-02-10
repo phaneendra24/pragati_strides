@@ -16,9 +16,9 @@ const Heuristic = () => {
 
   return (
     <div className="w-full md:flex-col md:items-center px-10 mb-10">
-      <div className="md:flex mt-7 md:justify-between">
+      <div className="md:flex mt-7 md:justify-between md:w-auto">
         <div className="text-[#64239f] text-4xl ">Heuristic Flick</div>
-        <div className=" m-10 w-5/6 sm:w-1/2 border-2 border-purple-700  sm:h-[70vh] flex flex-col opacity-70">
+        <div className=" mt-5 md:m-10 w-full sm:w-1/2 border-2 border-purple-700  sm:h-[70vh] flex flex-col opacity-70">
           {/* card with image div */}
           <div>
             <Image
@@ -49,6 +49,7 @@ const Heuristic = () => {
           </div>
         </div>
       </div>
+
       <div className="w-full flex flex-col">
         <div className="p-5 flex flex-col">
           <div className="text-violet-700 text-3xl">Event Rules</div>

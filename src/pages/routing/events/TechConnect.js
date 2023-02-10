@@ -15,10 +15,10 @@ const TechConnect = () => {
   ];
 
   return (
-    <div className="w-full md:flex-col md:items-center px-10 ">
-      <div className="md:flex md:justify-between">
-        <div className="text-[#64239f] text-4xl">TechConnect</div>
-        <div className=" m-10 w-5/6 sm:w-1/2 border-2 border-purple-700  sm:h-[70vh] flex flex-col opacity-70">
+    <div className="w-full md:flex-col md:items-center px-10 mb-10">
+      <div className="md:flex mt-7 md:justify-between md:w-auto">
+        <div className="text-[#64239f] text-4xl ">Tech Connect</div>
+        <div className=" mt-5 md:m-10 w-full sm:w-1/2 border-2 border-purple-700  sm:h-[70vh] flex flex-col opacity-70">
           {/* card with image div */}
           <div>
             <Image
@@ -26,7 +26,7 @@ const TechConnect = () => {
               width={400}
               height={100}
               className="w-full h-56"
-              alt="Loading..."
+              alt="loading..."
             />
           </div>
           <div className=" h-full w-full flex flex-col justify-evenly p-5">
@@ -49,13 +49,14 @@ const TechConnect = () => {
           </div>
         </div>
       </div>
+
       <div className="w-full flex flex-col">
         <div className="p-5 flex flex-col">
           <div className="text-violet-700 text-3xl">Event Rules</div>
           <ul
             className={`my-10 md:flex md:justify-evenly ${
               inView
-                ? "transition duration-1000 ease-out translate-x-0"
+                ? "transition duration-1000 ease-out blur-0 translate-x-0"
                 : "translate-x-[-100%] blur-sm transition-all duration-1000 opacity-0"
             } gap-6`}
             ref={ref}
