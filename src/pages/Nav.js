@@ -12,7 +12,7 @@ const Nav = () => {
     },
     {
       name: "Events",
-      link: "/routing/Events",
+      link: "/Events",
     },
   ];
   let [menu, setmenu] = useState(false);

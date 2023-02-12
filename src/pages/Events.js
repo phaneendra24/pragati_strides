@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import Heuristic from "./events/Heuristic";
-import TechConnect from "./events/TechConnect";
-import TrickyZone from "./events/TrickyZone";
-import AdventureQuest from "./events/AdventureQuest";
+import Heuristic from "./events/HeuristicFlick/Heuristic";
+import TechConnect from "./events/TechConnect/TechConnect";
+import TrickyZone from "./events/TrickZone/TrickyZone";
+import AdventureQuest from "./events/adventureQuest/AdventureQuest";
 
 const Events = () => {
   return (

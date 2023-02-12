@@ -11,8 +11,13 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   font-family: "Lora", serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html {
@@ -60,7 +65,7 @@ html {
   background-image: var(--image-gradient), url(/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
+  /* padding-bottom: 30px !important; */
   padding-top: 30px !important;
 }
 
@@ -109,4 +114,8 @@ html {
 
 .welcome-greet {
   font-family: "Source Code Pro", monospace;
+}
+
+.about {
+  /* font-family: cubano, sans-serif; */
 }
