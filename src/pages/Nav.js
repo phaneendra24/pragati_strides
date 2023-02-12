@@ -20,7 +20,19 @@ const Nav = () => {
     <div className="w-full fixed top-0 left-0 text-white">
       <div className="md:flex items-center justify-between bg-[#14142b]  py-4 md:px-10 px-7">
         {/* <div className="font-bold text-2xl cursor-pointer flex items-center"> */}
-        <div>Pragati</div>
+        <div>
+          <svg viewBox="0 0 1320 300" className="logo-svg w-34 h-11  pr-3">
+            <text
+              x="50%"
+              y="50%"
+              dy=".35em"
+              text-anchor="middle"
+              className="logo-text"
+            >
+              E-ARTIFACT
+            </text>
+          </svg>
+        </div>
         <div
           className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
           onClick={() => setmenu(!menu)}
@@ -58,7 +70,7 @@ const Nav = () => {
           )}
         </div>
         <ul
-          className={`bg-[#14142b] md:flex md:items-center md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`bg-[#14142b] md:flex md:items-center md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-full md:justify-end md:gap-20 md:pl-0 pl-9 transition-all duration-500 ease-in ${
             menu ? "top-20" : "top-[-490px]"
           }`}
         >
@@ -66,7 +78,6 @@ const Nav = () => {
             <li
               key={Link.name}
               className="md:ml-8 text-xl
-            hover:underline
             hover:text-violet-700 duration-500
         motion-safe:transition-all motion-safe:duration-200
         hover:text-xl font-semibold

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import EventNav from "./EventNav";
 
-const Heuristic = () => {
+const AdventureQuest = () => {
   const { ref, inView, entry } = useInView();
 
   const eventRules = [
@@ -17,7 +17,7 @@ const Heuristic = () => {
     <div className="relative w-full md:flex-col md:items-center px-10 mb-10">
       <EventNav />
       <div className="md:flex mt-7 md:justify-between md:w-auto">
-        <div className="text-[#64239f] text-4xl md:ml-6 ">Heuristic Flick</div>
+        <div className="text-[#64239f] text-4xl md:ml-6 ">AdventureQuest</div>
         <div className="shadow-2xl shadow-purple-700/50 mt-5 md:m-10 w-full sm:w-1/2 sm:h-[70vh] flex flex-col opacity-70">
           {/* card with image div */}
           <div>
@@ -92,4 +92,4 @@ const Heuristic = () => {
   );
 };
 
-export default Heuristic;
+export default AdventureQuest;

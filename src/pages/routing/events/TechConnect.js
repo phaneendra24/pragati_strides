@@ -1,11 +1,10 @@
 import Image from "next/image";
 
 import { useInView } from "react-intersection-observer";
+import EventNav from "./EventNav";
 
 const TechConnect = () => {
   const { ref, inView, entry } = useInView();
-  console.log(inView);
-  console.log(entry);
 
   const eventRules = [
     "some random text to display",
@@ -15,10 +14,11 @@ const TechConnect = () => {
   ];
 
   return (
-    <div className="w-full md:flex-col md:items-center px-10 mb-10">
+    <div className="relative w-full md:flex-col md:items-center px-10 mb-10">
+      <EventNav />
       <div className="md:flex mt-7 md:justify-between md:w-auto">
-        <div className="text-[#64239f] text-4xl ">Tech Connect</div>
-        <div className=" mt-5 md:m-10 w-full sm:w-1/2 border-2 border-purple-700  sm:h-[70vh] flex flex-col opacity-70">
+        <div className="text-[#64239f] text-4xl md:ml-6 ">Tech Connect</div>
+        <div className="shadow-2xl shadow-purple-700/50 mt-5 md:m-10 w-full sm:w-1/2 sm:h-[70vh] flex flex-col opacity-70">
           {/* card with image div */}
           <div>
             <Image
@@ -61,10 +61,10 @@ const TechConnect = () => {
             } gap-6`}
             ref={ref}
           >
-            {eventRules.map((rule) => {
+            {eventRules.map((rule, index) => {
               return (
                 <li
-                  key={rule}
+                  key={index}
                   className="p-2 h-32 flex  justify-center items-center border-2 border-purple-700"
                 >
                   <span>
