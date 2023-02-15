@@ -14,7 +14,7 @@ const TechConnect = () => {
   ];
 
   return (
-    <div className="relative w-full md:flex-col md:items-center px-10 mb-10">
+    <div className="relative w-[100%] md:flex-col md:items-center px-10 mb-10">
       <EventNav />
       <div className="md:flex mt-7 md:justify-between md:w-auto">
         <div className="text-[#64239f] text-4xl md:ml-6 ">Tech Connect</div>
