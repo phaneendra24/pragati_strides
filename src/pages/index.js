@@ -16,7 +16,7 @@ export default function Home() {
       <div className=" w-[100%]">
         <Nav />
         <div className="main-section bg-home-bg w-[100%] h-[100vh] text-white ">
-          <div className="mt-32 w-[100%] flex justify-between">
+          <div className="sm:mt-32 mt-24 w-[100%] flex justify-between">
             <div className="h-[70%] flex flex-col justify-start ml-10 gap-10">
               <h1 className="text-2xl sm:text-5xl">Pragati Strides</h1>
               <h3 className="text-[#b968c7] sm:text-2xl text-6xl">
