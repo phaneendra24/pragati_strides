@@ -7,18 +7,20 @@ import Welcome from "./home/Welcome";
 import { motion } from "framer-motion";
 import About from "./about/About";
 import Footer from "./footer/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import { useInView } from "react-intersection-observer";
 
 export default function Home() {
+  const { ref, inView, entry } = useInView();
+
   return (
     <>
       <div className=" w-[100%]">
-        <Nav />
         <div className="main-section bg-home-bg w-[100%] h-[100vh] text-white ">
           <div className="sm:mt-32 mt-24 w-[100%] flex justify-between">
             <div className="h-[70%] flex flex-col justify-start ml-10 gap-10">
-              <h1 className="text-2xl sm:text-5xl">Pragati Strides</h1>
+              <motion.h1 className="text-2xl sm:text-5xl">
+                Pragati Strides
+              </motion.h1>
               <h3 className="text-[#b968c7] sm:text-2xl text-6xl">
                 E-artifact
               </h3>

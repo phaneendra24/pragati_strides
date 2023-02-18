@@ -24,7 +24,7 @@ const Modal = ({ handleClose, text }) => {
   return (
     <Backdrop onClick={handleClose}>
       <motion.div
-        className="w-[80%] sm:w-[70%]   flex flex-col items-center mt-24 overflow-scroll p-4"
+        className="w-[90%] sm:w-[70%]   flex flex-col items-center mt-24 overflow-y-scroll p-4"
         // onClick={(e) => e.stopPropagation()}
         variants={dropIn}
         initial="hidden"
@@ -34,13 +34,18 @@ const Modal = ({ handleClose, text }) => {
         <div className="flex flex-col">
           <div className="w-full flex justify-between mb-10">
             <p className="text-purple-700 text-4xl">Hueristic FLick</p>
-            <button className="p-2 w-14 bg-purple-700 ">close</button>
+            <button className="h-fit p-1 sm:p-2 w-14 bg-purple-700 ">
+              close
+            </button>
           </div>
           <div className="w-full">
-            <h1 className="bg-teal-700 w-fit p-2 text-xl font-medium">
+            <div className="w-full flex justify-center">
+              <img src="/poster.png" className="w-72 " />
+            </div>
+            <h1 className="bg-teal-700 w-fit p-2 text-xl font-medium mt-8">
               Description
             </h1>
-            <p className="h-2/3 text-lg mt-5">
+            <p className="h-2/3 text-lg mt-5 text-center">
               Welcome to our Machine Learning for Students!
               <br /> Are you interested in applying your machine learning skills
               in a fun and competitive environment? Look no further! Our

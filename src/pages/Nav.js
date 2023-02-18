@@ -4,7 +4,7 @@ const Nav = () => {
   let Links = [
     {
       name: "Home",
-      link: "",
+      link: "/",
     },
     {
       name: "Register",
@@ -17,7 +17,7 @@ const Nav = () => {
   ];
   let [menu, setmenu] = useState(false);
   return (
-    <div className="w-full fixed top-0 left-0 text-white">
+    <div className="w-full fixed top-0 left-0 text-white z-[1] ">
       <div className="md:flex items-center justify-between bg-[#14142b]  py-4 md:px-10 px-7">
         {/* <div className="font-bold text-2xl cursor-pointer flex items-center"> */}
         <div>

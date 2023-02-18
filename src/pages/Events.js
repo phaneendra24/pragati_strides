@@ -6,7 +6,7 @@ import AdventureQuest from "./events/adventureQuest/AdventureQuest";
 
 const Events = () => {
   return (
-    <div className="w-[100%] flex flex-col justify-center items-center bg-[#14141c]  text-white ">
+    <div className="w-[100%] flex flex-col justify-center items-center bg-[#14141c]  text-white mt-[75px]">
       {/* events parent body div */}
       <div className="w-[100%] sm:w-[90%] flex flex-col">
         {/* main grid  */}
