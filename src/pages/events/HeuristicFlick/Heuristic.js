@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import EventNav from "../EventNav";
 import Modal from "./Modal";
@@ -21,11 +21,11 @@ const AdventureQuest = () => {
     <>
       <div
         className="relative w-[100%] md:flex-col md:items-center px-10 mb-10"
-        id="gimmeFocus"
+        id="gimmeFocus-heuristic"
       >
         <EventNav />
         <div className="md:flex mt-7 md:justify-between md:w-auto">
-          <div id="adventure" className="text-[#64239f] text-4xl md:ml-6 ">
+          <div className="text-[#64239f] text-4xl md:ml-6 ">
             Hueristic Flick
           </div>
           <div className="shadow-2xl shadow-purple-700/50 mt-5 md:m-10 w-full sm:w-1/2 sm:h-[70vh] flex flex-col opacity-70">
@@ -56,7 +56,7 @@ const AdventureQuest = () => {
                   className="border-2 p-2 w-36 border-purple-700 hover:bg-[#8729d9]  ease-in"
                   onClick={async () => {
                     await document
-                      .getElementById("gimmeFocus")
+                      .getElementById("gimmeFocus-heuristic")
                       .scrollIntoView({ behavior: "smooth" });
                     modalOpen ? close() : open();
                   }}
