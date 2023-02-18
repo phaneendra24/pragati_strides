@@ -21,7 +21,7 @@ const TechConnect = () => {
     <>
       <div
         className="relative w-[100%] md:flex-col md:items-center px-10 mb-10"
-        id="gimmeFocus-Tech"
+        id="Tech"
       >
         <EventNav />
         <div className="md:flex mt-7 md:justify-between md:w-auto">
@@ -56,7 +56,7 @@ const TechConnect = () => {
                   className="border-2 p-2 w-36 border-purple-700 hover:bg-[#8729d9]  ease-in"
                   onClick={async () => {
                     await document
-                      .getElementById("gimmeFocus-Tech")
+                      .getElementById("Tech")
                       .scrollIntoView({ behavior: "smooth" });
                     modalOpen ? close() : open();
                   }}

@@ -33,7 +33,7 @@ const Modal = ({ handleClose, text }) => {
       >
         <div className="flex flex-col">
           <div className="w-full flex justify-between mb-10">
-            <p className="text-purple-700 text-4xl">Hueristic FLick</p>
+            <p className="text-purple-700 text-4xl">TechConnect</p>
             <button className="p-2 w-14 bg-purple-700 ">close</button>
           </div>
           <div className="w-full">
