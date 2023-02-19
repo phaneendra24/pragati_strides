@@ -70,22 +70,24 @@ const Nav = () => {
           )}
         </div>
         <ul
-          className={`bg-[#14142b] md:flex md:items-center md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-full md:justify-end md:gap-20 md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`absolute bg-[#14142b] md:flex md:items-center md:pb-0 pb-12 md:static  md:z-auto z-[-1] left-0 w-full md:w-full md:justify-end md:gap-20 md:pl-0 pl-9 transition-all duration-500 ease-in ${
             menu ? "top-20" : "top-[-490px]"
           }`}
         >
           {Links.map((Link) => (
             <li
               key={Link.name}
-              className="md:ml-8 text-xl
-            hover:text-violet-700 duration-500
+              className="relative md:ml-8 text-xl
+            hover:duration-500
         motion-safe:transition-all motion-safe:duration-200
         hover:text-xl font-semibold
         md:my-0 my-7
 
             "
             >
-              <a href={Link.link}>{Link.name}</a>
+              <a href={Link.link} className="nav">
+                {Link.name}
+              </a>
             </li>
           ))}
         </ul>

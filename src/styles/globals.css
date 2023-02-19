@@ -119,3 +119,19 @@ html {
 .about {
   font-family: cubano, sans-serif;
 }
+
+/* nav  */
+
+.nav::after {
+  content: "";
+  position: absolute;
+  background-color: #8e2fe3;
+  height: 3px;
+  width: 0;
+  left: 0px;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.nav:hover::after {
+  width: 100%;
+}
