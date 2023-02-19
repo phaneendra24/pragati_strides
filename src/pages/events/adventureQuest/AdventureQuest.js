@@ -46,9 +46,14 @@ const AdventureQuest = () => {
                 allotted time.
               </div>
               <div className="flex justify-around">
-                <button className="border-2 p-2 w-36 border-purple-700 hover:bg-[#8729d9] ">
-                  Register
-                </button>
+                <a
+                  className="no-underline"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfcZROXVGluTj_ZJwlTRlp6e4lpTGNjNW-4WNVJ3zjN4Gv8hw/viewform?usp=sf_link"
+                >
+                  <button className="border-2 p-2 w-36 border-purple-700 hover:bg-[#8729d9] ">
+                    Register
+                  </button>
+                </a>
                 <a href="#adventure">
                   <button
                     className="border-2 p-2 w-36 border-purple-700 hover:bg-[#8729d9]  ease-in"

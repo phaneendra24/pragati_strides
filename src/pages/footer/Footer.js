@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="h-[70vh] bg-[#000000] w-[100%] text-white p-10 flex flex-col justify-center items-center">
-      <div className="sm:w-[50%] h-fit grid grid-cols-4 justify-items-center">
+      <div className="sm:w-[50%] h-fit grid grid-cols-3 gap-10 md:grid-cols-4 justify-items-center">
         <div className="flex flex-col">
           <h1>Faculty</h1>
           <div className="flex flex-col mt-10 text-sm text-[#8d8d8d]">
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10 flex gap-36">
+      <div className="mt-10 flex gap-20 sm:gap-36">
         Pragati Strides
         <div className="flex gap-3">
           <svg
