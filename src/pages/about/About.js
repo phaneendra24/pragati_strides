@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div className="py-32 w-[100%] bg-[#161123] text-white flex flex-col  items-center justify-evenly ">
       <motion.div
-        className={`about bg-purple-700 inline-block text-gray-900 px-6 py-4 md:text-6xl shadow-xl 
+        className={` about bg-purple-700  text-gray-900 px-6 py-4 md:text-6xl shadow-xl 
         ${
           inView
             ? "opacity-1 transition-all duration-1000 ease-out translate-y-0"
@@ -19,7 +19,7 @@ const About = () => {
         }`}
         ref={ref}
       >
-        About event
+        About
       </motion.div>
       <div
         className={`pt-10 w-[90%] md:w-[60%] text-center text-lg md:text-2xl
