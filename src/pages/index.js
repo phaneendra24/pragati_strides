@@ -23,7 +23,7 @@ export default function Home() {
         <div className="main-section bg-home-bg w-[100%] h-[100vh] text-white ">
           <div className="sm:mt-32 mt-24 w-[100%] flex justify-between">
             <div className="h-[70%] flex flex-col justify-start ml-10 gap-10">
-              <motion.h1 className="text-sm sm:text-3xl text-teal-700">
+              <motion.h1 className="text-lg sm:text-3xl text-teal-700">
                 Pragati Engineering college
               </motion.h1>
               <h3 className="text-[#b968c7] sm:text-2xl text-6xl">
