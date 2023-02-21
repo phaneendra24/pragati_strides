@@ -26,7 +26,7 @@ export default function Home() {
               <motion.h1 className="text-lg sm:text-3xl text-teal-700">
                 Pragati Engineering college
               </motion.h1>
-              <h3 className="text-[#b968c7] sm:text-2xl text-6xl">
+              <h3 className="text-[#b968c7] sm:text-2xl text-4xl">
                 E-ARTIFACT
               </h3>
               <div className="pr-10 sm:4/6 text-xl">
