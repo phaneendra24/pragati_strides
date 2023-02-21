@@ -42,7 +42,7 @@ const Modal = ({ handleClose, text }) => {
             <div className="w-full">
               <img src="/poster.png" className="w-72 " />
             </div>
-            <h1 className="bg-teal-700 w-fit p-2 text-xl font-medium mt-8">
+            <h1 className="bg-teal-700 w-fit p-2 pr-2 text-xl font-medium mt-8">
               Description
             </h1>
             <p className="h-2/3 text-lg mt-5">
@@ -68,7 +68,7 @@ const Modal = ({ handleClose, text }) => {
             </div>
           </div>
           <div>
-            <h1 className="bg-teal-700 w-fit p-1 text-lg font-medium mt-8 mb-1">
+            <h1 className="bg-teal-700 w-fit p-1 pr-2 text-lg font-medium mt-8 mb-1">
               Rules
             </h1>
             -Only individual participation is allowed to participate in the
@@ -102,11 +102,11 @@ const Modal = ({ handleClose, text }) => {
               <li>Dr.k.lakshmi viveka</li>
             </ul>
           </div>
-          <div className="flex items-center  mt-8">
+          <div className="flex-col sm:flex mt-8">
             <div className="bg-teal-700 p-1 w-fit text-lg font-medium mr-10">
               Registration Fee
             </div>
-            <div>No Registration Fee required</div>
+            <div className="mt-2">No Registration Fee required</div>
           </div>
           <div>
             <h1 className="bg-teal-700 w-fit p-1 text-lg font-medium mt-8">
