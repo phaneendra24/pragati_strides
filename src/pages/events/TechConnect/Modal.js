@@ -67,7 +67,7 @@ const Modal = ({ handleClose, text }) => {
               <p className="mt-5">Third Prize : 500/-</p>
             </div>
           </div>
-          <div>
+          <div className="text-lg">
             <h1 className="bg-teal-700 w-fit p-1 pr-2 text-lg font-medium mt-8 mb-1">
               Rules
             </h1>
@@ -78,7 +78,7 @@ const Modal = ({ handleClose, text }) => {
             in prior).
             <br />- Participant should participate in the given allotted time.
           </div>
-          <div>
+          <div className="text-lg">
             <h1 className="bg-teal-700 w-fit p-1 text-lg font-medium mt-8">
               Co-ordinators Details
             </h1>
@@ -93,7 +93,7 @@ const Modal = ({ handleClose, text }) => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="text-lg">
             <h1 className="bg-teal-700 w-fit p-1 text-lg font-medium mt-8">
               Faculty co-ordinators
             </h1>
@@ -102,13 +102,13 @@ const Modal = ({ handleClose, text }) => {
               <li>Dr.k.lakshmi viveka</li>
             </ul>
           </div>
-          <div className="flex-col sm:flex mt-8">
+          <div className="flex-col sm:flex mt-8 text-lg">
             <div className="bg-teal-700 p-1 w-fit text-lg font-medium mr-10">
               Registration Fee
             </div>
             <div className="mt-2">No Registration Fee required</div>
           </div>
-          <div>
+          <div className="text-lg">
             <h1 className="bg-teal-700 w-fit p-1 text-lg font-medium mt-8">
               EVENT DATE
             </h1>
