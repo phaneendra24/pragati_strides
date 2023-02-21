@@ -33,10 +33,9 @@ const TrickyZone = () => {
             {/* bottom card div */}
 
             <div className="my-3">
-              Only individual participation is allowed to participate in the
-              event.Participants must have "Unstop" account (details will be
-              provided in prior). Participant should participate in the given
-              allotted time.
+              This event mainly focuses on enhancing the students creative
+              thinking and the problem solving ability and to implement the
+              techniques for extracting the information to solve the given task
             </div>
             <div className="flex justify-around">
               <a

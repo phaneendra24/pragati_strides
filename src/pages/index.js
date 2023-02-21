@@ -23,11 +23,11 @@ export default function Home() {
         <div className="main-section bg-home-bg w-[100%] h-[100vh] text-white ">
           <div className="sm:mt-32 mt-24 w-[100%] flex justify-between">
             <div className="h-[70%] flex flex-col justify-start ml-10 gap-10">
-              <motion.h1 className="text-2xl sm:text-5xl">
-                Pragati Strides
+              <motion.h1 className="text-2xl sm:text-4xl">
+                Pragati Engineering college
               </motion.h1>
               <h3 className="text-[#b968c7] sm:text-2xl text-6xl">
-                E-artifact
+                E-ARTIFACT
               </h3>
               <div className="pr-10 sm:4/6 text-xl">
                 Modern technology is not good or evil in itself.<br></br> It's

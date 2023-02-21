@@ -11,10 +11,9 @@ const TechConnect = () => {
   const close = () => setModelOpen(false);
 
   const eventRules = [
-    "some random text to display",
-    "some random text to display",
-    "some random text to display",
-    "some random text to display",
+    "Only individual participation is allowed to participate in the event",
+    'Participants must have "Unstop" account (details will be provided in prior)',
+    "Participant should participate in the given allotted time",
   ];
 
   return (
@@ -43,10 +42,9 @@ const TechConnect = () => {
               {/* bottom card div */}
 
               <div className="my-3">
-                Only individual participation is allowed to participate in the
-                event.Participants must have "Unstop" account (details will be
-                provided in prior). Participant should participate in the given
-                allotted time.
+                Tech Connect contains three phases which avails to bring out the
+                technical knowledge in the participants.Participants will be
+                shortlisted in each round depending on score secured
               </div>
               <div className="flex justify-around">
                 <a
@@ -88,7 +86,7 @@ const TechConnect = () => {
                 return (
                   <li
                     key={index}
-                    className="p-2 h-32 flex  justify-center items-center border-2 border-purple-700"
+                    className="p-1 h-32 w-48 flex  justify-center items-center border-2 border-purple-700"
                   >
                     <span>
                       <svg

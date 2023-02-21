@@ -38,8 +38,8 @@ const About = () => {
         students,and tech enthusiasts to learn, grow, and network. Whether
         you're a seasoned veteran or just starting out, "E-Artifact" provides an
         opportunity for everyone to demonstrate their mastery and push their
-        boundaries. So come on down and join us for a thrilling journey through
-        the world of technology. Register now and be a part of the "E-Artifact"
+        boundaries. So come on and join us for a thrilling journey through the
+        world of technology. Register now and be a part of the "E-Artifact"
         experience!
       </div>
     </div>

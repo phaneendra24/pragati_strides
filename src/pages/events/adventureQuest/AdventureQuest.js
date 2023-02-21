@@ -40,10 +40,10 @@ const AdventureQuest = () => {
               {/* bottom card div */}
 
               <div className="my-3">
-                Only individual participation is allowed to participate in the
-                event.Participants must have "Unstop" account (details will be
-                provided in prior). Participant should participate in the given
-                allotted time.
+                It is an exciting event of searching something that is difficult
+                to find.It is similar to the Treasure Hunt.In each stage a
+                participant needs to solve given hint to reach next level.To
+                find the treasure,we will make you scratch your brains out !!!
               </div>
               <div className="flex justify-around">
                 <a

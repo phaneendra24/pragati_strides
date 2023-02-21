@@ -26,7 +26,7 @@ const AdventureQuest = () => {
         <EventNav />
         <div className="md:flex mt-7 md:justify-between md:w-auto">
           <div className="text-[#64239f] text-4xl md:ml-6 ">
-            Hueristic Flick
+            Heuristic Flick
           </div>
           <div className="shadow-2xl shadow-purple-700/50 mt-5 md:m-10 w-full sm:w-1/2 sm:h-[70vh] flex flex-col opacity-70">
             {/* card with image div */}
@@ -43,10 +43,11 @@ const AdventureQuest = () => {
               {/* bottom card div */}
 
               <div className="my-3">
-                Only individual participation is allowed to participate in the
-                event.Participants must have "Unstop" account (details will be
-                provided in prior). Participant should participate in the given
-                allotted time.
+                This event will provide an opportunity for students to explore
+                and discuss technical concepts as well as general topics through
+                the form of short films. This will be an entertaining and
+                educational experience as students showcase their creative and
+                critical thinking skills.
               </div>
               <div className="flex justify-around">
                 <a

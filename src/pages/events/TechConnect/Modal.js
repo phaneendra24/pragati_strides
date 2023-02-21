@@ -24,7 +24,7 @@ const Modal = ({ handleClose, text }) => {
   return (
     <Backdrop onClick={handleClose}>
       <motion.div
-        className="w-[80%] sm:w-[70%]   flex flex-col items-center mt-24 overflow-scroll p-4"
+        className="w-[90%] sm:w-[70%]   flex flex-col  mt-24 overflow-y-scroll p-4 "
         // onClick={(e) => e.stopPropagation()}
         variants={dropIn}
         initial="hidden"
@@ -33,46 +33,87 @@ const Modal = ({ handleClose, text }) => {
       >
         <div className="flex flex-col">
           <div className="w-full flex justify-between mb-10">
-            <p className="text-purple-700 text-4xl">TechConnect</p>
-            <button className="p-2 w-14 bg-purple-700 ">close</button>
+            <p className="text-purple-700 text-4xl">Tech Connect</p>
+            <button className="h-fit p-1 sm:p-2 w-14 bg-purple-700 ">
+              close
+            </button>
           </div>
           <div className="w-full">
-            <h1 className="bg-teal-700 w-fit p-2 text-xl font-medium">
+            <div className="w-full">
+              <img src="/poster.png" className="w-72 " />
+            </div>
+            <h1 className="bg-teal-700 w-fit p-2 text-xl font-medium mt-8">
               Description
             </h1>
             <p className="h-2/3 text-lg mt-5">
-              Welcome to our Machine Learning for Students!
-              <br /> Are you interested in applying your machine learning skills
-              in a fun and competitive environment? Look no further! Our
-              competition is designed to challenge students to develop
-              innovative solutions using machine learning techniques.
-              <br /> To participate in the competition, students will be
-              required to submit a project proposal outlining their intended
-              approach and goals. The project can be on any topic related to
-              machine learning, such as image recognition, natural language
-              processing, predictive modeling, or any other relevant area. The
-              proposal should include a clear problem statement, data sources,
-              and a description of the machine learning techniques that will be
-              applied.
-              <br />
-              Finally, the top performing models will be evaluated, and the
-              winners will be announced. The winners will be determined based on
-              the performance of their models, the novelty and creativity of
-              their approach, and the overall quality of their project.
-              <br /> The top winners will be awarded prizes and recognition for
-              their achievement, and all participants will have the opportunity
-              to showcase their work and network with other students and
-              professionals in the field of machine learning.
-              <br /> So, are you ready to put your machine learning skills to
-              the test and compete for the top prize? Submit your project
-              proposal today and show us what you're made of!
+              1.The first round is “Odd One Out”- In this Participants have to
+              select the odd one in the given technical question.
+              <br /> 2. The second round is “Technical Quiz”- In this
+              Participants are allotted questions are based on the latest
+              technologies and further more. The third round is “Debug The
+              Code”- In this some codes are allotted and participants need to
+              find the error. <br /> Evaluation Procedure: <br />
+              Participants will be shortlisted in each round depending on score
+              secured. In case of tie breaker, we will consider best time.
             </p>
           </div>
           <div className="mt-10">
             <h1 className="bg-teal-700 w-fit px-2 text-xl font-medium">
-              Price
+              Prize Pool
             </h1>
-            <p className="mt-5">prices will be distributed accordingly</p>
+            <div className="flex gap-10">
+              <p className="mt-5">First Prize : 1200/-</p>
+              <p className="mt-5">Second Prize : 800/-</p>
+              <p className="mt-5">Third Prize : 500/-</p>
+            </div>
+          </div>
+          <div>
+            <h1 className="bg-teal-700 w-fit p-1 text-lg font-medium mt-8 mb-1">
+              Rules
+            </h1>
+            -Only individual participation is allowed to participate in the
+            event.
+            <br />
+            -Participants must have "Unstop" account (details will be provided
+            in prior).
+            <br />- Participant should participate in the given allotted time.
+          </div>
+          <div>
+            <h1 className="bg-teal-700 w-fit p-1 text-lg font-medium mt-8">
+              Co-ordinators Details
+            </h1>
+            <ul className="mt-2">
+              <li>
+                J V S BHARGAVI
+                <span className="text-blue-400 pl-11">Contact: 9490863868</span>
+              </li>
+              <li>
+                G.DILEEP
+                <span className="text-blue-400 pl-11">Contact: 8919035396</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 className="bg-teal-700 w-fit p-1 text-lg font-medium mt-8">
+              Faculty co-ordinators
+            </h1>
+            <ul className="mt-2">
+              <li>Dr.Subodh Kumar panda</li>
+              <li>Dr.k.lakshmi viveka</li>
+            </ul>
+          </div>
+          <div className="flex items-center  mt-8">
+            <div className="bg-teal-700 p-1 w-fit text-lg font-medium mr-10">
+              Registration Fee
+            </div>
+            <div>No Registration Fee required</div>
+          </div>
+          <div>
+            <h1 className="bg-teal-700 w-fit p-1 text-lg font-medium mt-8">
+              EVENT DATE
+            </h1>
+            <p>3rd March 2023</p>
+            <p>Last date for Registration - some date </p>
           </div>
         </div>
       </motion.div>
