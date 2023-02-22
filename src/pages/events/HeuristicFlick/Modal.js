@@ -109,14 +109,7 @@ const Modal = ({ handleClose, text }) => {
               </li>
             </ul>
           </div>
-          <div className="text-lg">
-            <h1 className="bg-teal-700 w-fit p-1 text-lg font-medium mt-8">
-              Faculty co-ordinators
-            </h1>
-            <ul className="mt-2">
-              <li>null</li>
-            </ul>
-          </div>
+
           <div className="flex-col sm:flex mt-8 text-lg">
             <div className="bg-teal-700 p-1 w-fit text-lg font-medium mr-10">
               Registration Fee

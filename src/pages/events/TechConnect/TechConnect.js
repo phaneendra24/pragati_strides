@@ -85,7 +85,7 @@ const TechConnect = () => {
                 return (
                   <li
                     key={index}
-                    className="p-1 h-32 w-48 flex  justify-center items-center border-2 border-purple-700"
+                    className="p-1 h-32 w-64 sm:w-48 flex  justify-center items-center border-2 border-purple-700"
                   >
                     <span>
                       <svg

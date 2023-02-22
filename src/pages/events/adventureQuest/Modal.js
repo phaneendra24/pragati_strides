@@ -33,7 +33,7 @@ const Modal = ({ handleClose, text }) => {
       >
         <div className="flex flex-col">
           <div className="w-full flex justify-between mb-10">
-            <p className="text-purple-700 text-4xl">Adventure Quest</p>
+            <p className="text-purple-700 text-4xl">AdventureQuest</p>
             <button className="h-fit p-1 sm:p-2 w-14 bg-purple-700 ">
               close
             </button>
@@ -42,10 +42,21 @@ const Modal = ({ handleClose, text }) => {
             <div className="w-full">
               <img src="/poster.png" className="w-72 " />
             </div>
-            <h1 className="bg-teal-700 w-fit p-2 text-xl font-medium mt-8">
+            <h1 className="bg-teal-700 w-fit p-2 pr-2 text-xl font-medium mt-8">
               Description
             </h1>
-            <p className="h-2/3 text-lg mt-5 text-center"></p>
+            <p className="h-2/3 text-lg mt-5">
+              It is an exciting event of searching something that is difficult
+              to find.It is an online experience that challenges players to find
+              specified items or solve puzzles before the allotted time runs
+              out.Finding a treasure by passing the challenges through the clues
+              from previous levels....The challenges may include any technical
+              questions and tricky questions.You need to solve questions to get
+              to the next question or clue and one step closer to the final
+              prize. The type of question will be changing from one level to the
+              next, but it would have one thing in common- we will make you
+              scratch your brains out !!!
+            </p>
           </div>
           <div className="mt-10">
             <h1 className="bg-teal-700 w-fit px-2 text-xl font-medium">
@@ -56,28 +67,51 @@ const Modal = ({ handleClose, text }) => {
               <p className="mt-5">Second Prize : 800/-</p>
               <p className="mt-5">Third Prize : 500/-</p>
             </div>
+            *Merit certificates will be issued to the winners* **E-certificates
+            will be issued for all participants **
           </div>
-          <div>
+
+          <div className="text-lg">
+            <h1 className="bg-teal-700 w-fit p-1 pr-2 text-lg font-medium mt-8 mb-1">
+              Guidlines:-
+            </h1>
+            1)Number of participants restricted to 1 member only. <br /> 2)Every
+            registered student can access the link only once.
+            <br /> 3) The participant who clears all the challenges as early as
+            possible will be awarded the first position and remaining as
+            follows. <br />
+            4)Only the person who registered will be able to take the quest from
+            the registered email id <br />
+            5)Do not share the clue with others you may lose your position.
+          </div>
+          <div className="text-lg">
             <h1 className="bg-teal-700 w-fit p-1 text-lg font-medium mt-8">
               Co-ordinators Details
             </h1>
             <ul className="mt-2">
               <li>
-                D.Adithya Kumar Reddy
-                <span className="text-blue-400 pl-11">Contact: 9390799936</span>
+                SRUJANA
+                <span className="text-blue-400 pl-11">Contact: 8790216597</span>
               </li>
               <li>
-                G.Srujana
-                <span className="text-blue-400 pl-11">Contact: 8790216597</span>
+                ADITHYA 
+                <span className="text-blue-400 pl-11">Contact: 9390799936</span>
               </li>
             </ul>
           </div>
-          <div>
+
+          <div className="flex-col sm:flex mt-8 text-lg">
+            <div className="bg-teal-700 p-1 w-fit text-lg font-medium mr-10">
+              Registration Fee
+            </div>
+            <div className="mt-2">No Registration Fee required</div>
+          </div>
+          <div className="text-lg">
             <h1 className="bg-teal-700 w-fit p-1 text-lg font-medium mt-8">
-              DATE
+              EVENT DATE
             </h1>
             <p>3rd March 2023</p>
-            <p>Registration last date : </p>
+            <p>Last date for Registration - some date </p>
           </div>
         </div>
       </motion.div>

@@ -11,10 +11,10 @@ const AdventureQuest = () => {
   const close = () => setModelOpen(false);
 
   const eventRules = [
-    "some random text to display",
-    "some random text to display",
-    "some random text to display",
-    "some random text to display",
+    "Every registered student can access the link only once",
+    "Only the person who registered will be able to take the quest from the registered email id",
+    "Do not share the clue with others you may lose your position",
+    "Number of participants restricted to 1 member only",
   ];
 
   return (
@@ -43,27 +43,30 @@ const AdventureQuest = () => {
                 It is an exciting event of searching something that is difficult
                 to find.It is similar to the Treasure Hunt.In each stage a
                 participant needs to solve given hint to reach next level.To
-                find the treasure,we will make you scratch your brains out !!!
+                find the treasure,we will make you scratch your brains out !!!
               </div>
               <div className="flex justify-around">
                 <a
-                  className="no-underline"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfcZROXVGluTj_ZJwlTRlp6e4lpTGNjNW-4WNVJ3zjN4Gv8hw/viewform?usp=sf_link"
+                  className="no-underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <button className="border-2 p-2 w-36 border-purple-700 hover:bg-[#8729d9] ">
+                  <button className="border-2 py-2 px-4 w-fit sm:w-36 border-purple-700 hover:bg-[#8729d9] ">
                     Register
                   </button>
                 </a>
-                <a href="#adventure">
-                  <button
-                    className="border-2 p-2 w-36 border-purple-700 hover:bg-[#8729d9]  ease-in"
-                    onClick={() => {
-                      modalOpen ? close() : open();
-                    }}
-                  >
-                    View more
-                  </button>
-                </a>
+                <button
+                  className="border-2 p-2 w-fit sm:w-36  border-purple-700 hover:bg-[#8729d9]  ease-in"
+                  onClick={async () => {
+                    await document
+                      .getElementById("adventure")
+                      .scrollIntoView({ behavior: "smooth" });
+                    modalOpen ? close() : open();
+                  }}
+                >
+                  View more
+                </button>
               </div>
             </div>
           </div>
@@ -84,7 +87,7 @@ const AdventureQuest = () => {
                 return (
                   <li
                     key={index}
-                    className="p-2 h-32 flex  justify-center items-center border-2 border-purple-700"
+                    className="p-1 h-32 w-64 sm:w-48 flex  justify-center items-center border-2 border-purple-700"
                   >
                     <span>
                       <svg
@@ -107,7 +110,9 @@ const AdventureQuest = () => {
             </ul>
           </div>
         </div>
-        {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+        <div className="">
+          {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+        </div>
       </div>
     </>
   );
