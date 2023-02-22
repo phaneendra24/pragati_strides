@@ -48,6 +48,7 @@ const TechConnect = () => {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeug5dFqeaejA6oxFBu_7sENCT13m3DuV80vrCDBP-CeuNiSw/viewform?usp=sf_link"
                   className="no-underline"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="border-2 py-2 px-4 w-fit sm:w-36 border-purple-700 hover:bg-[#8729d9] ">
                     Register

@@ -54,6 +54,7 @@ const Heuristic = () => {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfCjCd7DEb6YU0RpdcKYA2PpXVMWKq8lnbpH1KL37xQV68e2A/viewform"
                   className="no-underline"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="border-2 py-2 px-4 w-fit sm:w-36 border-purple-700 hover:bg-[#8729d9] ">
                     Register
