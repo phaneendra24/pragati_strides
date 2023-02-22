@@ -35,7 +35,11 @@ export default function Home() {
               </div>
               <Welcome />
               <div className="">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBfdmESh0BrMTqPeG42sH16n7n8UoR6ruFTABKetuzvj3FIQ/viewform?usp=sf_link">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdBfdmESh0BrMTqPeG42sH16n7n8UoR6ruFTABKetuzvj3FIQ/viewform?usp=sf_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
