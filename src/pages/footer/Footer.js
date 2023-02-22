@@ -5,14 +5,22 @@ const Footer = () => {
         <div className="flex flex-col">
           <h1>Faculty</h1>
           <div className="flex flex-col mt-10 text-sm text-[#8d8d8d]">
-            <p>Mrs.L.Yamuna</p>
-            <p>Mr.M.S.V.Ramesh</p>
-            <p>Ms.P.Satyavathi</p>
-            <p>Mrs.T.Durga</p>
+            <p>
+              A.JANARDHANRAO <br />
+              <span className="pl-5">ph- 9951754338</span>{" "}
+            </p>
+            <p>
+              Dr.A.Radha Krishna
+              <br /> (professor & HOD)
+              <br />
+              M.Tech,Ph.D
+              <br />
+              <span className="pl-5">ph- 9440614466</span>{" "}
+            </p>
           </div>
         </div>
         <div>
-          Coordinatos
+          Co-ordinators
           <div className="flex flex-col mt-10 text-sm text-[#8d8d8d]">
             <p>M.vanitha</p>
             <p>M.S.Bhaskhar</p>
@@ -21,17 +29,21 @@ const Footer = () => {
         <div>
           Event Co-ordinators
           <div className="flex flex-col mt-10 text-sm text-[#8d8d8d]">
-            <p>Adhitya</p>
-            <p>J.V.S.Bhargavi</p>
+            <p>Sk.Nazmeer</p>
+            <p>D.Venkata surya</p>
             <p>C.Swetha</p>
-            <p>Venkata Surya</p>
+            <p>v.Vinod</p>
+            <p>D.Aditya</p>
+            <p>G.Srujana</p>
+            <p>J.s.v.Bhargavi</p>
+            <p>G.Dileep</p>
           </div>
         </div>
         <div className="flex flex-col">
           <h1>Contact</h1>
           <div className="flex mt-10 flex-col  text-sm text-[#8d8d8d]">
             ph : 8008457585 <br />
-            ph : 8008457585
+            ph : 8106207191
           </div>
         </div>
       </div>

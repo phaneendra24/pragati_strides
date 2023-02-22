@@ -1,4 +1,4 @@
-import { Inter } from "@next/font/google";
+import { Blinker, Inter } from "@next/font/google";
 import Nav from "./Nav";
 
 import SvgCom from "./home/Svg-component";
@@ -20,6 +20,12 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className=" w-[100%]">
+        <marquee
+          className="text-white absolute left-[15%] sm:left-[10%] right-0 top-24 sm:top-28"
+          width="70%"
+        >
+          Last Date for Registrations - 26th February 2023
+        </marquee>
         <div className="main-section bg-home-bg w-[100%] h-[100vh] text-white ">
           <div className="sm:mt-32 mt-24 w-[100%] flex justify-between">
             <div className="h-[70%] flex flex-col justify-start ml-10 gap-10">
