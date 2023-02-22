@@ -4,24 +4,24 @@ import { useInView } from "react-intersection-observer";
 import EventNav from "../EventNav";
 import Modal from "./Modal";
 
-const AdventureQuest = () => {
+const Heuristic = () => {
   const { ref, inView, entry } = useInView();
   const [modalOpen, setModelOpen] = useState(false);
   const open = () => setModelOpen(true);
   const close = () => setModelOpen(false);
 
   const eventRules = [
-    "some random text to display",
-    "some random text to display",
-    "some random text to display",
-    "some random text to display",
+    "The participant must choose from the topics given ",
+    "Number of participants is restricted to 3-6 members only ",
+    "Evaluation will be done based on the judgement during the event",
+    "The presentations can be in short videos or animations or even slideshows with transitions ",
   ];
 
   return (
     <>
       <div
         className="relative w-[100%] md:flex-col md:items-center px-10 mb-10"
-        id="gimmeFocus-heuristic"
+        id="Heuristic"
       >
         <EventNav />
         <div className="md:flex mt-7 md:justify-between md:w-auto">
@@ -51,18 +51,19 @@ const AdventureQuest = () => {
               </div>
               <div className="flex justify-around">
                 <a
-                  className="no-underline"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfCjCd7DEb6YU0RpdcKYA2PpXVMWKq8lnbpH1KL37xQV68e2A/viewform"
+                  className="no-underline"
+                  target="_blank"
                 >
-                  <button className="border-2 p-2 w-36 border-purple-700 hover:bg-[#8729d9] ">
+                  <button className="border-2 py-2 px-4 w-fit sm:w-36 border-purple-700 hover:bg-[#8729d9] ">
                     Register
                   </button>
                 </a>
                 <button
-                  className="border-2 p-2 w-36 border-purple-700 hover:bg-[#8729d9]  ease-in"
+                  className="border-2 p-2 w-fit sm:w-36  border-purple-700 hover:bg-[#8729d9]  ease-in"
                   onClick={async () => {
                     await document
-                      .getElementById("gimmeFocus-heuristic")
+                      .getElementById("Heuristic")
                       .scrollIntoView({ behavior: "smooth" });
                     modalOpen ? close() : open();
                   }}
@@ -89,7 +90,7 @@ const AdventureQuest = () => {
                 return (
                   <li
                     key={index}
-                    className="p-2 h-32 flex  justify-center items-center border-2 border-purple-700"
+                    className="p-1 h-32 w-48 flex  justify-center items-center border-2 border-purple-700"
                   >
                     <span>
                       <svg
@@ -120,4 +121,4 @@ const AdventureQuest = () => {
   );
 };
 
-export default AdventureQuest;
+export default Heuristic;
