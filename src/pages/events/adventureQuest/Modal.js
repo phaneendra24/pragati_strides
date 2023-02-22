@@ -40,7 +40,7 @@ const Modal = ({ handleClose, text }) => {
           </div>
           <div className="w-full">
             <div className="w-full">
-              <img src="/poster.png" className="w-72 " />
+              <img src="/eventPosters/AdventureQuest.jpg" className="w-72 " />
             </div>
             <h1 className="bg-teal-700 w-fit p-2 pr-2 text-xl font-medium mt-8">
               Description

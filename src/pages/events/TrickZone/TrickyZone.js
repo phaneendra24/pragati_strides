@@ -39,7 +39,7 @@ const TrickyZone = () => {
             <div className=" h-full w-full flex flex-col justify-evenly p-5">
               {/* bottom card div */}
 
-              <div className="my-3">
+              <div className="my-3 text-lg">
                 This event mainly focuses on enhancing the students creative
                 thinking and the problem solving ability and to implement the
                 techniques for extracting the information to solve

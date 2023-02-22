@@ -14,6 +14,10 @@ const Nav = () => {
       name: "Events",
       link: "/Events",
     },
+    {
+      name: "Poster",
+      link: "/Poster",
+    },
   ];
   let [menu, setmenu] = useState(false);
   return (

@@ -39,7 +39,7 @@ const AdventureQuest = () => {
             <div className=" h-full w-full flex flex-col justify-evenly p-5">
               {/* bottom card div */}
 
-              <div className="my-3">
+              <div className="my-3 text-lg">
                 It is an exciting event of searching something that is difficult
                 to find.It is similar to the Treasure Hunt.In each stage a
                 participant needs to solve given hint to reach next level.To

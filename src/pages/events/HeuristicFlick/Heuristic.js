@@ -42,7 +42,7 @@ const Heuristic = () => {
             <div className=" h-full w-full flex flex-col justify-evenly p-5">
               {/* bottom card div */}
 
-              <div className="my-3">
+              <div className="my-3 text-lg">
                 This event will provide an opportunity for students to explore
                 and discuss technical concepts as well as general topics through
                 the form of short films. This will be an entertaining and

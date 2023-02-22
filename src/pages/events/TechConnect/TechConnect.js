@@ -38,7 +38,7 @@ const TechConnect = () => {
             <div className=" h-full w-full flex flex-col justify-evenly p-5">
               {/* bottom card div */}
 
-              <div className="my-3">
+              <div className="my-3 text-lg">
                 Tech Connect contains three phases which avails to bring out the
                 technical knowledge in the participants.Participants will be
                 shortlisted in each round depending on score secured
