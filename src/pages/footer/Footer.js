@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="h-[70vh] bg-[#000000] w-[100%] text-white p-10 flex flex-col justify-center items-center">
+    <div className="h-[80vh]  bg-[#000000] w-[100%] text-white p-10 flex flex-col justify-center items-center">
       <div className="sm:w-[50%] h-fit grid grid-cols-2 gap-10 md:grid-cols-3 justify-items-center">
         <div className="flex flex-col">
           <h1>Faculty</h1>
