@@ -1,42 +1,37 @@
 const Footer = () => {
   return (
     <div className="h-[70vh] bg-[#000000] w-[100%] text-white p-10 flex flex-col justify-center items-center">
-      <div className="sm:w-[50%] h-fit grid grid-cols-3 gap-10 md:grid-cols-4 justify-items-center">
+      <div className="sm:w-[50%] h-fit grid grid-cols-2 gap-10 md:grid-cols-3 justify-items-center">
         <div className="flex flex-col">
           <h1>Faculty</h1>
           <div className="flex flex-col mt-10 text-sm text-[#8d8d8d]">
-            <p>someOne</p>
-            <p>someOne</p>
-            <p>someOne</p>
-            <p>someOne</p>
-            <p>someOne</p>
+            <p>Mrs.L.Yamuna</p>
+            <p>Mr.M.S.V.Ramesh</p>
+            <p>Ms.P.Satyavathi</p>
+            <p>Mrs.T.Durga</p>
           </div>
         </div>
         <div>
           Coordinatos
           <div className="flex flex-col mt-10 text-sm text-[#8d8d8d]">
-            <p>someOne</p>
-            <p>someOne</p>
-            <p>someOne</p>
-            <p>someOne</p>
-            <p>someOne</p>
+            <p>M.vanitha</p>
+            <p>M.S.Bhaskhar</p>
           </div>
         </div>
         <div>
-          Something
+          Event Co-ordinators
           <div className="flex flex-col mt-10 text-sm text-[#8d8d8d]">
-            <p>someOne</p>
-            <p>someOne</p>
-            <p>someOne</p>
-            <p>someOne</p>
-            <p>someOne</p>
+            <p>Adhitya</p>
+            <p>J.V.S.Bhargavi</p>
+            <p>C.Swetha</p>
+            <p>Venkata Surya</p>
           </div>
         </div>
         <div className="flex flex-col">
-          <h1>contact</h1>
-          <div className="flex flex-col mt-10 text-sm text-[#8d8d8d]">
-            <p>Mail address</p>
-            <p>m.number</p>
+          <h1>Contact</h1>
+          <div className="flex mt-10 flex-col  text-sm text-[#8d8d8d]">
+            ph : 8008457585 <br />
+            ph : 8008457585
           </div>
         </div>
       </div>

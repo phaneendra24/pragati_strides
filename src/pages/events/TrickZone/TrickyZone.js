@@ -29,7 +29,7 @@ const TrickyZone = () => {
             {/* card with image div */}
             <div>
               <Image
-                src="/eventpics/huristic.jpeg"
+                src="/trickyZone.jpg"
                 width={400}
                 height={100}
                 className="w-full h-56"
