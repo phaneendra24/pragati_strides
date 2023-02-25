@@ -40,12 +40,12 @@ export default function Home() {
                 all about how people choose to use it.
               </div>
               <Welcome />
-              <div className="">
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdBfdmESh0BrMTqPeG42sH16n7n8UoR6ruFTABKetuzvj3FIQ/viewform?usp=sf_link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdBfdmESh0BrMTqPeG42sH16n7n8UoR6ruFTABKetuzvj3FIQ/viewform?usp=sf_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="">
                   <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
@@ -54,8 +54,8 @@ export default function Home() {
                   >
                     Register Now
                   </motion.button>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
             <SvgCom />
           </div>
