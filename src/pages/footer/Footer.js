@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 const Footer = () => {
   return (
-    <div className="h-[80vh]  bg-[#000000] w-[100%] text-white p-10 flex flex-col justify-center items-center">
+    <div className=" bg-[#000000] w-[100%] text-white p-10 flex flex-col justify-center items-center">
       <div className="sm:w-[50%] h-fit grid grid-cols-2 gap-10 md:grid-cols-3 justify-items-center">
         <div className="flex flex-col">
           <h1>Faculty</h1>
@@ -44,6 +46,33 @@ const Footer = () => {
           <div className="flex mt-10 flex-col  text-sm text-[#8d8d8d]">
             ph : 8008457585 <br />
             ph : 8106207191
+          </div>
+        </div>
+        <div>
+          <p className="text-base">Developed by:</p>
+          <div className="mt-10 flex">
+            <p className="inline-block">phaneendrapilli</p>
+
+            <a href="https://github.com/phaneendra24">
+              <div className="flex   text-sm text-[#8d8d8d]">
+                <Image
+                  src="/github-mark-white.png"
+                  className="w-5 h-5 ml-3"
+                  width={5}
+                  height={5}
+                />
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/phaneendra-pilli-5a2881246/">
+              <div className="flex   text-sm text-[#8d8d8d]">
+                <Image
+                  src="/linkedin.svg"
+                  className="w-5 h-5 ml-3 bg-white"
+                  width={5}
+                  height={5}
+                />
+              </div>
+            </a>
           </div>
         </div>
       </div>
