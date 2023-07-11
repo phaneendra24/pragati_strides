@@ -62,7 +62,6 @@ html {
 
 .main-section {
   /* z-index: -1; */
-  background-image: var(--image-gradient), url(/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   /* padding-bottom: 30px !important; */
